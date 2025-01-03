@@ -1,0 +1,5 @@
+n = int(input())
+ingredient = set(input().split())
+used_ingredient = set(input().split())
+not_used_ingredient = list(ingredient - used_ingredient)
+print(*not_used_ingredient)
