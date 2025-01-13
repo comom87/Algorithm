@@ -31,6 +31,7 @@ for _ in range(m):
     new_cloud = []
     for x in range(n):
         for y in range(n):
+            # set에서 in 연산의 시간복잡도는 O(1) → moved_cloud를 set으로 설정
             if (x, y) not in moved_cloud and basket[x][y] >= 2:
                 new_cloud.append((x, y))
                 basket[x][y] -= 2
