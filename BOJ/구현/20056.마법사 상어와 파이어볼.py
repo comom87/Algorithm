@@ -48,3 +48,6 @@ fireball_m_cnt = 0
 for _, _, m, _, _ in fireball:
     fireball_m_cnt += m
 print(fireball_m_cnt)
+
+# 2
+# 시간 복잡도 개선
