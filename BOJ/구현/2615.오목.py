@@ -3,8 +3,8 @@
 import sys
 input = sys.stdin.readline
 
-dx = [0, 1, 1, 1]
-dy = [1, 0, 1, -1]
+dx = [0, 1, 1, -1]
+dy = [1, 0, 1, 1]
 
 def omok():
     for x in range(19):
@@ -19,7 +19,7 @@ def omok():
                         cnt += 1
 
                         if cnt == 5:
-                            if 0 <= x - dx[i] < 19 and 0 <= x - dy[i] < 19 and board[x - dx[i]][y - dy[i]] == board[x][y]:
+                            if 0 <= x - dx[i] < 19 and 0 <= y - dy[i] < 19 and board[x - dx[i]][y - dy[i]] == board[x][y]:
                                 break
                             if 0 <= nx + dx[i] < 19 and 0 <= ny + dy[i] < 19 and board[nx + dx[i]][ny + dy[i]] == board[x][y]:
                                 break
