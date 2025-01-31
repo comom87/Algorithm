@@ -1,3 +1,4 @@
+# BFS로 풀었지만 DFS로도 가능할 것 같다..!
 import sys
 from collections import deque
 input = sys.stdin.readline
