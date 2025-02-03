@@ -10,5 +10,4 @@ for i in range(m - 1):
 for i in range(1, n):
     for j in range(1, m):
         room[i][j] = max(room[i - 1][j], room[i][j - 1], room[i - 1][j - 1]) + room[i][j]
-print(room)
 print(room[n - 1][m - 1])
