@@ -1,6 +1,6 @@
 # 하나의 수를 제거하거나 제거하지 않는 2가지 경우를 모두 고려하는 것까지는 생각했는데...
 # 왜 갱신하는 방법을 생각을 못하니!!!
-# 11번째 줄과 관련된 반례: https://www.acmicpc.net/board/view/141372
+# 11번째줄 관련 반례: https://www.acmicpc.net/board/view/141372
 import sys
 input = sys.stdin.readline
 
