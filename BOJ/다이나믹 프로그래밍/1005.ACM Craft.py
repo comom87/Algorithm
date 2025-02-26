@@ -4,9 +4,6 @@ import sys
 from collections import deque
 input = sys.stdin.readline
 
-def topology_sort():
-    pass
-
 t = int(input())
 for _ in range(t):
     n, k = map(int, input().split())
