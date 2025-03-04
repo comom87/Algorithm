@@ -20,6 +20,8 @@ for i in range(len(nums) - 1):
     num = nums[i]
     for left in range(5):
         for right in range(5):
+            if dp[i][left][right] == 1e9:
+                continue
             dp[i + 1][num][right] = min(dp[i + 1][num][right], dp[i][left][right] + calculate_cost(left, num))
             dp[i + 1][left][num] = min(dp[i + 1][left][num], dp[i][left][right] + calculate_cost(right, num))
 print(min(map(min, dp[-1])))
