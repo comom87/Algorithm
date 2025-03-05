@@ -15,7 +15,6 @@ def calculate_cost(previous_point, new_point):
     else:
         return 3
 
-
 for i in range(len(nums) - 1):
     num = nums[i]
     for left in range(5):
