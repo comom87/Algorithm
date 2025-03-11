@@ -27,7 +27,7 @@ for i in range(n):
 
 city = list(map(int, input().split()))
 can_visit = 'YES'
-for i in range(1, m):
+for i in range(m - 1):
     if parent[city[i] - 1] != parent[city[i + 1] - 1]:
         can_visit = 'NO'
         break
